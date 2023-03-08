@@ -15,3 +15,8 @@ The project must be placed in a specific directory on your host machine. The pat
      - README.md
  
 ## Launching an application using Docker
+
+First, you need to go to the root directory of the project in CMD.
+
+It is necessary to build the image using the following command in the terminal:
+$docker build -t log_image:latest .
