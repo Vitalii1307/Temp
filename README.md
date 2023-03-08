@@ -52,3 +52,8 @@ _new_container_ is the name of the corresponding container,
 _tail -n 100 -f_ means we scan the file from end to beginning choosing 100 lines with real-time monitoring,
 
 `/dockerbuildlog/app/output/access.log` is the file directory in the container
+
+After that, we can stop our container with the following command:
+> docker stop new_container
+
+Here _new_container_ is the name of our container
