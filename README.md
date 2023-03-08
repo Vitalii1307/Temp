@@ -27,3 +27,6 @@ Next, you should create a volume using the command
 > docker volume create my_volume
 
 Here, _my_volume_ means the name of the created volume.
+
+After that, you need to start the Docker container using the following command:
+> docker run -it --name new_container -e USER=$USER -v /home/vitaliisavchuk/projects/datetime_logger_cpp/config.json:/dockerbuildlog/config.json -v my_volume:/dockerbuildlog/app/output log_image
