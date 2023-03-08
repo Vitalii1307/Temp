@@ -42,3 +42,6 @@ next we set the bind mount of our config.json file, specifying the location of t
 
 also we set the mount point in our created volume using
 `-v my_volume:/dockerbuildlog/app/output log_image`
+
+
+We can see if our logs are stored in the access.log file by running the following command.
