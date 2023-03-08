@@ -22,3 +22,8 @@ It is necessary to build the image using the following command in the terminal:
 > docker build -t log_image:latest .
 
 This command creates an image and names it _log_image_ with the _latest_ tag. Dot "." means that the image will be created from the current directory.
+
+Next, you should create a volume using the command
+> docker volume create my_volume
+
+Here, _myvolume_ means the name of the created volume.
