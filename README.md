@@ -48,5 +48,7 @@ also we set the mount point in our created volume using
 Here _docker exec_ command is used to execute a command inside a running container,
 
 _new_container_ is the name of the corresponding container,
+
 _tail -n 100 -f_ means we scan the file from end to beginning choosing 100 lines with real-time monitoring,
+
 '/dockerbuildlog/app/output/access.log' is the file directory in the container
