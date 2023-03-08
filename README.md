@@ -44,3 +44,6 @@ also we set the mount point in our created volume using
 
 + We can see if our logs are stored in the access.log file by running the following command:
 > docker exec new_container tail -n 100 -f /dockerbuildlog/app/output/access.log
+
+Here _docker exec_ command is used to execute a command inside a running container,
+
