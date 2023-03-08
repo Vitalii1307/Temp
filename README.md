@@ -26,4 +26,4 @@ This command creates an image and names it _log_image_ with the _latest_ tag. Do
 Next, you should create a volume using the command
 > docker volume create my_volume
 
-Here, _myvolume_ means the name of the created volume.
+Here, _my_volume_ means the name of the created volume.
