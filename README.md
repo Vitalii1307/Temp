@@ -21,7 +21,7 @@ The project must be placed in a specific directory on your host machine. The pat
 
 This command creates an image and names it _log_image_ with the _latest_ tag. Dot "." means that the image will be created from the current directory.
 
-Next, you should create a volume using the command
++ Next, you should create a volume using the command
 > docker volume create my_volume
 
 Here, _my_volume_ means the name of the created volume.
