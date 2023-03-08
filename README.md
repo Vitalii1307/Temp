@@ -40,5 +40,5 @@ _-e_ means we pass the user through the environment variable _USER=$USER_
 next we set the bind mount of our config.json file, specifying the location of the file on the host system and in the container itself with
 `-v /home/vitaliisavchuk/projects/datetime_logger_cpp/config.json:/dockerbuildlog/config.json`
 
-next we set the mount point in our created volume using
+also we set the mount point in our created volume using
 `-v my_volume:/dockerbuildlog/app/output log_image`
