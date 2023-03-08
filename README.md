@@ -16,7 +16,7 @@ The project must be placed in a specific directory on your host machine. The pat
  
 ## Launching an application using Docker
 
-First, you need to go to the root directory of the project in CMD.
++ First, you need to go to the root directory of the project in CMD.
 
 It is necessary to build the image using the following command in the terminal:
 > docker build -t log_image:latest .
@@ -28,7 +28,7 @@ Next, you should create a volume using the command
 
 Here, _my_volume_ means the name of the created volume.
 
-After that, you need to start the Docker container using the following command:
++ After that, you need to start the Docker container using the following command:
 > docker run -it --name new_container -e USER=$USER -v /home/vitaliisavchuk/projects/datetime_logger_cpp/config.json:/dockerbuildlog/config.json -v my_volume:/dockerbuildlog/app/output log_image
 
 Here, the _-its_ flag means that the container will be run in interactive mode,
@@ -44,4 +44,5 @@ also we set the mount point in our created volume using
 `-v my_volume:/dockerbuildlog/app/output log_image`
 
 
-We can see if our logs are stored in the access.log file by running the following command. 
++ We can see if our logs are stored in the access.log file by running the following command:
+> docker exec new_container tail -n 100 -f /dockerbuildlog/app/output/access.log
