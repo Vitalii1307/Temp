@@ -21,4 +21,4 @@ First, you need to go to the root directory of the project in CMD.
 It is necessary to build the image using the following command in the terminal:
 > docker build -t log_image:latest .
 
-This command creates an image and names it __log_image__ with the __latest__ tag. Dot "." means that the image will be created from the current directory.
+This command creates an image and names it **log_image** with the **latest** tag. Dot "." means that the image will be created from the current directory.
