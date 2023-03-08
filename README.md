@@ -1,5 +1,5 @@
 # Launch the date logging application
-
+## Installing the application
 First, you need to pull the project from a remote repository or other sources.
 
 In some cases, it may be necessary to install a compiler for C++ called g++ .
@@ -14,3 +14,4 @@ The project must be placed in a specific directory on your host machine. The pat
      - Dockerfile
      - README.md
  
+## Launching an application using Docker
