@@ -27,7 +27,7 @@ This command creates an image and names it _log_image_ with the _latest_ tag. Do
 Here, _my_volume_ means the name of the created volume.
 
 + After that, you need to start the Docker container using the following command:
-> docker run -it --name new_container -e USER=$USER -v /home/vitaliisavchuk/projects/datetime_logger_cpp/config.json:/dockerbuildlog/config.json -v my_volume:/dockerbuildlog/app/output log_image
+> docker run -it --name new_container -e USER=$USER -v /your/path/to/project/Vitalii_Savchuk_logapp/config.json:/dockerbuildlog/config.json -v my_volume:/dockerbuildlog/app/output log_image
 
 Here, the _-its_ flag means that the container will be run in interactive mode,
 
@@ -36,7 +36,7 @@ Here, the _-its_ flag means that the container will be run in interactive mode,
 _-e_ means we pass the user through the environment variable _USER=$USER_
 
 next we set the bind mount of our config.json file, specifying the location of the file on the host system and in the container itself with
-`-v /home/vitaliisavchuk/projects/datetime_logger_cpp/config.json:/dockerbuildlog/config.json`
+`-v /your/path/to/project/Vitalii_Savchuk_logapp/config.json:/dockerbuildlog/config.json`
 
 also we set the mount point in our created volume using
 `-v my_volume:/dockerbuildlog/app/output log_image`
